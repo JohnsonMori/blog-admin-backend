@@ -12,5 +12,6 @@
         </li>
       {% endfor %}
     </ul>
+    {{ helper.relativeTime(item.time) }}
   </body>
 </html>
