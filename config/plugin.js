@@ -8,12 +8,14 @@
 // }
 // };
 
-exports.nunjucks = {
-  enable: true,
-  package: 'egg-view-nunjucks',
+module.exports = {
+  nunjucks: {
+    enable: true,
+    package: 'egg-view-nunjucks',
+  },
+  mysql: {
+    enable: true,
+    package: 'egg-mysql',
+  },
 };
 
-exports.mysql = {
-  enable: true,
-  package: 'egg-mysql',
-};

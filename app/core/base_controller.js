@@ -9,8 +9,16 @@ class BaseController extends Controller {
   success(data) {
     this.ctx.body = {
       code: 10000,
-      success: true,
       data,
+      msg: '',
+    };
+  }
+
+  error(data, msg) {
+    this.ctx.body = {
+      code: 10001,
+      data,
+      msg,
     };
   }
 
