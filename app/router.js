@@ -11,4 +11,5 @@ module.exports = app => {
   router.get('/news', controller.news.list);
   router.post(`${prefix}/login`, controller.login.check);
   router.get(`${prefix}/userInfo`, controller.login.find);
+  router.post(`${prefix}/navigation`, controller.navigation.add);
 };
